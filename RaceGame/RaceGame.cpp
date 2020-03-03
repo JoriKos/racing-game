@@ -10,6 +10,5 @@ int main()
 	4. Auto-opties maken
 	5. Pitstop mechanic
 	6. Check of het elke component heeft
-	
 	*/
 } 
