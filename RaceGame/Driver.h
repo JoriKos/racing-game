@@ -15,9 +15,7 @@ private:
 public:
 	Driver();
 	~Driver();
-	void SetName(std::string nameTemp)
-	{
-		name = nameTemp;
-	}
+	void SetName(std::string nameTemp);
+	std::string GetName();
 
 };

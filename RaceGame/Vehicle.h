@@ -8,21 +8,9 @@ class Vehicle
 public:
 	Vehicle();
 	~Vehicle();
-	bool WinChance(float tempSpeed) 
-	{
-
-	}
-	float CalculateStats() 
-	{
-
-	}
-	Driver PickDriver()
-	{
-		for (int i = 0; i < drivers.size(); i++)
-		{
-			std::cout << drivers[i] << std::endl; //Print de array door middel van een for loop
-		}
-	}
+	bool WinChance(float tempSpeed);
+	float CalculateStats();
+	Driver PickDriver();
 
 
 private:
@@ -34,5 +22,4 @@ private:
 
 protected:
 	std::vector<Driver> drivers = {}; //Voeg drivers toe
-	std::vector<std::string> driverNames = {}; //Voeg drivers toe
 };
