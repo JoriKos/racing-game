@@ -41,7 +41,7 @@ bool VehicleFactory::CarComplete(Vehicle tempVehicle)
 		std::string tempName;
 		std::cout << "Enter your car name" << std::endl;
 		std::cin >> tempName;
-		CreateVehicle(tempVehicle, tempName);
+		tempVehicle.SetName(tempName);
 		return true;
 	}
 	else
@@ -54,4 +54,3 @@ Vehicle VehicleFactory::CreateVehicle(Vehicle tempVehicle, std::string carNameTe
 {
 	Vehicle tempVehicle = Vehicle(carNameTemp);
 }
-// for loop

@@ -10,9 +10,13 @@ public:
 	~Vehicle();
 
 	int GetTime();
+	//Getter/Setter components
 	std::vector<std::string> GetComponents();
 	void SetComponents(std::vector<std::string> tempVector, int vectorPos);
+	
 	std::vector<std::vector<std::string>> GetComponentSelection();
+	void SetName(std::string carNameTemp);
+	std::string GetName();
 
 protected:
 	int time; //Time on track, is random

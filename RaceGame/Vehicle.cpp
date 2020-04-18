@@ -29,3 +29,13 @@ std::vector<std::vector<std::string>> Vehicle::GetComponentSelection()
 {
 	return componentSelection;
 }
+
+void Vehicle::SetName(std::string carNameTemp)
+{
+	name = carNameTemp;
+}
+
+std::string Vehicle::GetName()
+{
+	return name;
+}

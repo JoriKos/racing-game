@@ -14,11 +14,10 @@ public:
 	void AskForComponents(Vehicle tempVehicle);
 
 private:
-	// Bools for checking components
+	//Bools for checking components
 	bool hasWheels = false;
 	bool hasDoor = false;
 	bool hasEngine = false;
 	bool hasDriver = false;
 	bool hasName = false;
 };
-
