@@ -153,7 +153,6 @@
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="Driver.cpp" />
-    <ClCompile Include="IO.cpp" />
     <ClCompile Include="RaceGame.cpp" />
     <ClCompile Include="Racetrack.cpp" />
     <ClCompile Include="Vehicle.cpp" />
@@ -162,7 +161,6 @@
   <ItemGroup>
     <ClInclude Include="Core.h" />
     <ClInclude Include="Driver.h" />
-    <ClInclude Include="IO.h" />
     <ClInclude Include="Racetrack.h" />
     <ClInclude Include="Vehicle.h" />
     <ClInclude Include="VehicleFactory.h" />
