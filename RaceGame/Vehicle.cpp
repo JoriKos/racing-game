@@ -1,35 +1,31 @@
 #include "Vehicle.h"
 
-Vehicle::Vehicle()
+Vehicle::Vehicle(std::string tempName)
 {
+	time = rand() % 10 + 1 * 100; //Random number generation (Source: http://www.cplusplus.com/reference/cstdlib/rand/)
+	name = tempName;
 }
 
 Vehicle::~Vehicle()
 {
 }
 
-bool Vehicle::WinChance(float tempSpeed)
+int Vehicle::GetTime()
 {
-	return false;
+	return time;
 }
 
-float Vehicle::CalculateStats()
+std::vector<std::string> Vehicle::GetComponents()
 {
-
-	float stats;
-	return stats;
+	return components;
 }
 
-Driver Vehicle::PickDriver()
+void Vehicle::SetComponents(std::vector<std::string> tempVector, int vectorPos)
 {
-	for (int i = 0; i < drivers.size(); i++)
-	{
-		std::cout << drivers.at(i).GetName() << std::endl; //Print de array door middel van een for loop
-	}
+	tempVector.at(vectorPos) = components.at(vectorPos);
+}
 
-	std::string tDriver; //temporary Driver om te bepalen welke driver de gebruiker wilt
-
-	std::cin >> tDriver;
-
-
+std::vector<std::vector<std::string>> Vehicle::GetComponentSelection()
+{
+	return componentSelection;
 }

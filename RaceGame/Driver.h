@@ -5,17 +5,4 @@
 class Driver
 {
 
-private:
-	float age;
-	float skill;
-	std::string name;
-	std::string bestCar;
-	std::string bestTrack;
-
-public:
-	Driver();
-	~Driver();
-	void SetName(std::string nameTemp);
-	std::string GetName();
-
 };
