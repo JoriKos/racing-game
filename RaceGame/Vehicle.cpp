@@ -1,8 +1,15 @@
 #include "Vehicle.h"
 
-Vehicle::Vehicle(std::string tempName)
+Vehicle::Vehicle(std::string tempName, bool isAICar)
 {
-	time = rand() % 10 + 1 * 100; //Random number generation (Source: http://www.cplusplus.com/reference/cstdlib/rand/)
+	if (!isAICar) 
+	{
+		time = rand() % 10 + 1 * 50; //Random number generation (Source: http://www.cplusplus.com/reference/cstdlib/rand/)
+	}
+	if (isAICar) 
+	{
+		time = rand() % 10 + 1;
+	}
 	name = tempName;
 }
 
@@ -39,3 +46,4 @@ std::string Vehicle::GetName()
 {
 	return name;
 }
+

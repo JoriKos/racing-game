@@ -11,52 +11,47 @@ VehicleFactory::~VehicleFactory()
 {
 }
 
-void VehicleFactory::AskForComponents(Vehicle tempVehicle) //Sets components
+Vehicle VehicleFactory::AskForComponents(Vehicle tempVehicle) //Sets components
 {
-	std::vector<std::string> tempComponents{ "Wheels", "Door", "Engine", "Driver", "Name" };
-	std::string component;
-	for (int i = 0; i < tempComponents.size(); i++)
+	std::vector<std::string> tempComponents{ "Wheels", "Door", "Engine", "Driver"};
+	char component[100];
+	for (int i = 0; i < 4; i++)
 	{
-		std::cout << "Choose your component: " << tempComponents.at(i) << std::endl; //Goes through the tempComponents
-		for (int i = 0; i < tempVehicle.GetComponentSelection().size(); i++) //Shows selection
+		for (int j = i; j < tempVehicle.GetComponentSelection().size(); j++) //Shows selection
 		{
-			for (int j = 0; j < tempVehicle.GetComponentSelection().at(i).size(); j++) 
+			std::cout << "Choose your component: " << tempComponents.at(i) << "\n"; //Goes through the tempComponents
+			for (int k = 0; k < tempVehicle.GetComponentSelection().at(j).size(); k++) 
 			{
-				std::cout << tempVehicle.GetComponentSelection().at(i).at(j);
+				std::cout << tempVehicle.GetComponentSelection().at(j).at(k) << "\n";
 			}
-				std::cin >> component;
-				component = tempComponents.at(i);
+			std::cin.getline(component, sizeof(component));
+			tempComponents.push_back(component);
+			break;
 		}
 	}
+
 	hasWheels = true;
 	hasDoor = true;
 	hasEngine = true;
 	hasDriver = true;
 	hasName = true;
 	
-	CarComplete(tempVehicle);
+	
+	return CarComplete(tempVehicle);
 }
 
-bool VehicleFactory::CarComplete(Vehicle tempVehicle1)
+Vehicle VehicleFactory::CarComplete(Vehicle tempVehicle1)
 {
-	//Checks if the car has every component if they are somehow not complete it will rerun AskForComponents and reset the car
+	//Checks if the car has every component
 	if (hasWheels && hasDoor && hasEngine && hasDriver && hasName)
 	{ 
 		std::cout << "Your car is ready" << std::endl;
-		std::string tempName;
-		std::cout << "Enter your car name" << std::endl;
-		std::cin >> tempName;
-		tempVehicle1.SetName(tempName);
-		return true;
-	}
-	else
-	{
-		AskForComponents(tempVehicle1);
+		return tempVehicle1;
 	}
 }
 
-Vehicle VehicleFactory::CreateVehicle(Vehicle tempVehicle2, std::string carNameTemp) //Will create the car
+Vehicle VehicleFactory::CreateVehicle(Vehicle tempVehicle2, std::string carNameTemp, bool isAICar) //Will create the car
 {
-	Vehicle tempVehicle = Vehicle(carNameTemp);
-	return tempVehicle;
+	tempVehicle2 = Vehicle(carNameTemp, isAICar);
+	return tempVehicle2;
 }

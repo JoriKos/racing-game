@@ -9,9 +9,9 @@ public:
 	VehicleFactory();
 	~VehicleFactory();
 
-	void AskForComponents(Vehicle tempVehicle);
-	bool CarComplete(Vehicle tempVehicle); //Checks if car is complete
-	Vehicle CreateVehicle(Vehicle tempVehicle, std::string carNameTemp);
+	Vehicle AskForComponents(Vehicle tempVehicle);
+	Vehicle CarComplete(Vehicle tempVehicle1); //Checks if car is complete
+	Vehicle CreateVehicle(Vehicle tempVehicle2, std::string carNameTemp, bool isAICar);
 
 private:
 	//Bools for checking components

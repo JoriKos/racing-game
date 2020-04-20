@@ -151,14 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Driver.cpp" />
     <ClCompile Include="RaceGame.cpp" />
     <ClCompile Include="Racetrack.cpp" />
     <ClCompile Include="Vehicle.cpp" />
     <ClCompile Include="VehicleFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Driver.h" />
     <ClInclude Include="Racetrack.h" />
     <ClInclude Include="Vehicle.h" />
     <ClInclude Include="VehicleFactory.h" />

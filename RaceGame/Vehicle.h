@@ -6,7 +6,7 @@
 class Vehicle
 {
 public:
-	Vehicle(std::string tempName);
+	Vehicle(std::string tempName, bool isAICar);
 	~Vehicle();
 
 	int GetTime();
@@ -23,9 +23,10 @@ protected:
 	std::string name; //Car name
 	std::vector<std::string> components{ "No wheels selected", "No door selected", "No engine selected", "No Driver selected", "No name selected" }; //Car components
 	std::vector<std::vector<std::string>> componentSelection{ 
-	/*Wheels*/  {"off-road", "slick", "thick"}, 
-	/*Doors*/   {"Horizontal doors", "vertical doors"},
-	/*Engines*/ {"Loud engine", "Silent engine", "Tiger 1 engine" /* Does not include other parts of the Tiger 1 */},
-	/*Driver*/  {"Max", "Kees", "Jan", "Henk"},
+	/*Wheels*/  {"off-road", "slick", "thick", "or custom"}, 
+	/*Doors*/   {"Horizontal doors", "vertical doors", "or custom"},
+	/*Engines*/ {"Loud engine", "Silent engine", "Tiger 1 engine", "or custom" /* Does not include other parts of the Tiger 1 */},
+	/*Driver*/  {"Max", "Kees", "Jan", "Henk", "or custom"},
+	/*Empty vector so I don't have to fix a problem*/ {}
 	};
 };

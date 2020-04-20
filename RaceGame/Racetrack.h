@@ -7,6 +7,6 @@ public:
 	Racetrack();
 	~Racetrack();
 
-	void TimeOnTrack(Vehicle tempVehicle); //Checks time the car has spent on the track
+	void TimeOnTrack(Vehicle tempVehicle, bool isAI); //Checks time the car has spent on the track
 };
 
