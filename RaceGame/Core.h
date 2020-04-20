@@ -7,8 +7,4 @@
 
 class Core
 {
-	std::vector<Vehicle> aiVehicles;
-
-	Vehicle userVehicle = Vehicle("tempVehicle");
-
 };

@@ -26,6 +26,6 @@ protected:
 	/*Wheels*/  {"off-road", "slick", "thick"}, 
 	/*Doors*/   {"Horizontal doors", "vertical doors"},
 	/*Engines*/ {"Loud engine", "Silent engine", "Tiger 1 engine" /* Does not include other parts of the Tiger 1 */},
-	/*Driver*/  {"Max Verstappen", "Stalin", "Mao", "Ho Chi Minh"}, //Don't ask why they're all communists
+	/*Driver*/  {"Max", "Kees", "Jan", "Henk"},
 	};
 };

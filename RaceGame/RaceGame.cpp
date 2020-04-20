@@ -1,7 +1,15 @@
 #include <iostream>
-#include "Core.h"
+#include "Vehicle.h"
+#include "VehicleFactory.h"
+#include "Driver.h"
+#include "Racetrack.h"
+#include <vector>
 
 int main()
 {
-	Core();
+	std::vector<Vehicle> aiVehicles;
+
+	Vehicle userVehicle = Vehicle("tempVehicle");
+	VehicleFactory factory = VehicleFactory();
+	factory.AskForComponents(userVehicle);
 } 

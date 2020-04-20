@@ -1,25 +1,6 @@
-﻿  Core.cpp
-  Driver.cpp
-E:\CPP\racing-game\racing-game\RaceGame\Driver.cpp(4,1): error C2600: 'Driver::Driver': cannot define a compiler-generated special member function (must be declared in the class first)
-E:\CPP\racing-game\racing-game\RaceGame\Driver.cpp(8,1): error C2600: 'Driver::~Driver': cannot define a compiler-generated special member function (must be declared in the class first)
-E:\CPP\racing-game\racing-game\RaceGame\Driver.cpp(11,14): error C2039: 'SetName': is not a member of 'Driver'
-E:\CPP\racing-game\racing-game\RaceGame\Driver.h(5): message : see declaration of 'Driver'
-E:\CPP\racing-game\racing-game\RaceGame\Driver.cpp(13,2): error C2065: 'name': undeclared identifier
-E:\CPP\racing-game\racing-game\RaceGame\Driver.cpp(16,21): error C2039: 'GetName': is not a member of 'Driver'
-E:\CPP\racing-game\racing-game\RaceGame\Driver.h(5): message : see declaration of 'Driver'
-E:\CPP\racing-game\racing-game\RaceGame\Driver.cpp(18,9): error C2065: 'name': undeclared identifier
-  IO.cpp
-  RaceGame.cpp
-  Racetrack.cpp
-E:\CPP\racing-game\racing-game\RaceGame\Racetrack.cpp(13,41): error C3867: 'Vehicle::GetTime': non-standard syntax; use '&' to create a pointer to member
-E:\CPP\racing-game\racing-game\RaceGame\Racetrack.cpp(13,41): error C2446: '<': no conversion from 'int (__thiscall Vehicle::* )(void)' to 'int'
-E:\CPP\racing-game\racing-game\RaceGame\Racetrack.cpp(13,34): message : There is no context in which this conversion is possible
-  Vehicle.cpp
-  VehicleFactory.cpp
-E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(30,20): warning C4018: '<': signed/unsigned mismatch
-E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(29,7): warning C4101: 'carComplete': unreferenced local variable
-E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(42,24): error C2082: redefinition of formal parameter 'tempVehicle'
-E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(42,35): error C2512: 'Vehicle::Vehicle': no appropriate default constructor available
-E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(42,22): error C2512: 'Vehicle': no appropriate default constructor available
-E:\CPP\racing-game\racing-game\RaceGame\Vehicle.h(6,7): message : see declaration of 'Vehicle'
-  Generating Code...
+﻿  VehicleFactory.cpp
+E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(18,20): warning C4018: '<': signed/unsigned mismatch
+E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(21,21): warning C4018: '<': signed/unsigned mismatch
+E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(23,22): warning C4018: '<': signed/unsigned mismatch
+E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(56): warning C4715: 'VehicleFactory::CarComplete': not all control paths return a value
+  RaceGame.vcxproj -> E:\CPP\racing-game\racing-game\Debug\RaceGame.exe
