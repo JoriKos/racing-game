@@ -12,7 +12,7 @@ Racetrack::~Racetrack()
 
 void Racetrack::TimeOnTrack(Vehicle tempVehicle, bool isAI)
 {
-	if (!isAI) 
+	if (!isAI)
 	{
 		for (int i = tempVehicle.GetTime(); i > 0; --i)
 		{
@@ -24,7 +24,6 @@ void Racetrack::TimeOnTrack(Vehicle tempVehicle, bool isAI)
 			if (i < 3) 
 			{
 				std::cout << tempVehicle.GetName() << " has been kicked off the track" << std::endl;
-				tempVehicle.kickOffCar(tempVehicle);
 				break;
 			}
 		}
@@ -37,7 +36,6 @@ void Racetrack::TimeOnTrack(Vehicle tempVehicle, bool isAI)
 			if (i < 0)
 			{
 				std::cout << tempVehicle.GetName() << " has been kicked off the track" << std::endl;
-				tempVehicle.kickOffCar(tempVehicle);
 				break;
 			}
 		}

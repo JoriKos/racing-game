@@ -1,2 +1,9 @@
 ﻿  RaceGame.cpp
+  Racetrack.cpp
+  Vehicle.cpp
+  VehicleFactory.cpp
+E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(20,21): warning C4018: '<': signed/unsigned mismatch
+E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(23,22): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+E:\CPP\racing-game\racing-game\RaceGame\VehicleFactory.cpp(51): warning C4715: 'VehicleFactory::CarComplete': not all control paths return a value
   RaceGame.vcxproj -> E:\CPP\racing-game\racing-game\Debug\RaceGame.exe
